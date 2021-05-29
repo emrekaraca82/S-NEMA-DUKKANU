@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="sinema_dükkanıModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="filmler">
+    <Key>
+      <PropertyRef Name="filmid" />
+    </Key>
+    <Property Name="filmid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="filmad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="konu" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="yönetmenid" Type="Int32" />
+    <Property Name="sure" Type="Int32" />
+    <Property Name="vizyontarihi" Type="DateTime" Precision="0" />
+    <Property Name="fiyat" Type="Double" />
+    <Property Name="stok" Type="Int32" />
+    <NavigationProperty Name="yöntemenler" Relationship="Self.FK_filmler_yöntemenler" FromRole="filmler" ToRole="yöntemenler" />
+    <NavigationProperty Name="satıslar" Relationship="Self.FK_satıslar_filmler" FromRole="filmler" ToRole="satıslar" />
+    <NavigationProperty Name="satıslar1" Relationship="Self.FK_satıslar_filmler1" FromRole="filmler" ToRole="satıslar" />
+    <NavigationProperty Name="oyunculars" Relationship="Self.filmoyuncuları" FromRole="filmler" ToRole="oyuncular" />
+    <NavigationProperty Name="türler" Relationship="Self.filmtürleri" FromRole="filmler" ToRole="türler" />
+  </EntityType>
+  <EntityType Name="müsteriler">
+    <Key>
+      <PropertyRef Name="müsid" />
+    </Key>
+    <Property Name="müsid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="adsoyad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="tcno" Type="String" MaxLength="11" FixedLength="false" Unicode="true" />
+    <Property Name="adres" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="telefon" Type="String" MaxLength="11" FixedLength="false" Unicode="true" />
+    <Property Name="kayıttarihi" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="satıslar" Relationship="Self.FK_satıslar_müsteriler" FromRole="müsteriler" ToRole="satıslar" />
+  </EntityType>
+  <EntityType Name="oyuncular">
+    <Key>
+      <PropertyRef Name="oyuncuid" />
+    </Key>
+    <Property Name="oyuncuid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="adısoyadı" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="dogumtarihi" Type="DateTime" Precision="0" />
+    <Property Name="memleket" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="filmlers" Relationship="Self.filmoyuncuları" FromRole="oyuncular" ToRole="filmler" />
+  </EntityType>
+  <EntityType Name="satıslar">
+    <Key>
+      <PropertyRef Name="satısid" />
+    </Key>
+    <Property Name="satısid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="müsid" Type="Int32" />
+    <Property Name="filmid" Type="Int32" />
+    <Property Name="satıstarih" Type="DateTime" Precision="0" />
+    <Property Name="adet" Type="Int32" />
+    <Property Name="fiyat" Type="Double" />
+    <Property Name="tutar" Type="Double" />
+    <NavigationProperty Name="filmler" Relationship="Self.FK_satıslar_filmler" FromRole="satıslar" ToRole="filmler" />
+    <NavigationProperty Name="filmler1" Relationship="Self.FK_satıslar_filmler1" FromRole="satıslar" ToRole="filmler" />
+    <NavigationProperty Name="müsteriler" Relationship="Self.FK_satıslar_müsteriler" FromRole="satıslar" ToRole="müsteriler" />
+  </EntityType>
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="türler">
+    <Key>
+      <PropertyRef Name="türid" />
+    </Key>
+    <Property Name="türid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="türad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="filmlers" Relationship="Self.filmtürleri" FromRole="türler" ToRole="filmler" />
+  </EntityType>
+  <EntityType Name="yöntemenler">
+    <Key>
+      <PropertyRef Name="yönetmenid" />
+    </Key>
+    <Property Name="yönetmenid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="adsoyad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="filmlers" Relationship="Self.FK_filmler_yöntemenler" FromRole="yöntemenler" ToRole="filmler" />
+  </EntityType>
+  <Association Name="FK_filmler_yöntemenler">
+    <End Role="yöntemenler" Type="Self.yöntemenler" Multiplicity="0..1" />
+    <End Role="filmler" Type="Self.filmler" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="yöntemenler">
+        <PropertyRef Name="yönetmenid" />
+      </Principal>
+      <Dependent Role="filmler">
+        <PropertyRef Name="yönetmenid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_satıslar_filmler">
+    <End Role="filmler" Type="Self.filmler" Multiplicity="0..1" />
+    <End Role="satıslar" Type="Self.satıslar" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="filmler">
+        <PropertyRef Name="filmid" />
+      </Principal>
+      <Dependent Role="satıslar">
+        <PropertyRef Name="filmid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_satıslar_filmler1">
+    <End Role="filmler" Type="Self.filmler" Multiplicity="0..1" />
+    <End Role="satıslar" Type="Self.satıslar" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="filmler">
+        <PropertyRef Name="filmid" />
+      </Principal>
+      <Dependent Role="satıslar">
+        <PropertyRef Name="filmid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_satıslar_müsteriler">
+    <End Role="müsteriler" Type="Self.müsteriler" Multiplicity="0..1" />
+    <End Role="satıslar" Type="Self.satıslar" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="müsteriler">
+        <PropertyRef Name="müsid" />
+      </Principal>
+      <Dependent Role="satıslar">
+        <PropertyRef Name="müsid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="filmoyuncuları">
+    <End Role="filmler" Type="Self.filmler" Multiplicity="*" />
+    <End Role="oyuncular" Type="Self.oyuncular" Multiplicity="*" />
+  </Association>
+  <Association Name="filmtürleri">
+    <End Role="filmler" Type="Self.filmler" Multiplicity="*" />
+    <End Role="türler" Type="Self.türler" Multiplicity="*" />
+  </Association>
+  <EntityContainer Name="sinema_dükkanıEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="filmlers" EntityType="Self.filmler" />
+    <EntitySet Name="müsteriler" EntityType="Self.müsteriler" />
+    <EntitySet Name="oyunculars" EntityType="Self.oyuncular" />
+    <EntitySet Name="satıslar" EntityType="Self.satıslar" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
+    <EntitySet Name="türler" EntityType="Self.türler" />
+    <EntitySet Name="yöntemenler" EntityType="Self.yöntemenler" />
+    <AssociationSet Name="FK_filmler_yöntemenler" Association="Self.FK_filmler_yöntemenler">
+      <End Role="yöntemenler" EntitySet="yöntemenler" />
+      <End Role="filmler" EntitySet="filmlers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_satıslar_filmler" Association="Self.FK_satıslar_filmler">
+      <End Role="filmler" EntitySet="filmlers" />
+      <End Role="satıslar" EntitySet="satıslar" />
+    </AssociationSet>
+    <AssociationSet Name="FK_satıslar_filmler1" Association="Self.FK_satıslar_filmler1">
+      <End Role="filmler" EntitySet="filmlers" />
+      <End Role="satıslar" EntitySet="satıslar" />
+    </AssociationSet>
+    <AssociationSet Name="FK_satıslar_müsteriler" Association="Self.FK_satıslar_müsteriler">
+      <End Role="müsteriler" EntitySet="müsteriler" />
+      <End Role="satıslar" EntitySet="satıslar" />
+    </AssociationSet>
+    <AssociationSet Name="filmoyuncuları" Association="Self.filmoyuncuları">
+      <End Role="filmler" EntitySet="filmlers" />
+      <End Role="oyuncular" EntitySet="oyunculars" />
+    </AssociationSet>
+    <AssociationSet Name="filmtürleri" Association="Self.filmtürleri">
+      <End Role="filmler" EntitySet="filmlers" />
+      <End Role="türler" EntitySet="türler" />
+    </AssociationSet>
+    <FunctionImport Name="sp_alterdiagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="version" Mode="In" Type="Int32" />
+      <Parameter Name="definition" Mode="In" Type="Binary" />
+    </FunctionImport>
+    <FunctionImport Name="sp_creatediagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="version" Mode="In" Type="Int32" />
+      <Parameter Name="definition" Mode="In" Type="Binary" />
+    </FunctionImport>
+    <FunctionImport Name="sp_dropdiagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_helpdiagramdefinition" ReturnType="Collection(sinema_dükkanıModel.sp_helpdiagramdefinition_Result)">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_helpdiagrams" ReturnType="Collection(sinema_dükkanıModel.sp_helpdiagrams_Result)">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_renamediagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="new_diagramname" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_upgraddiagrams" />
+    <FunctionImport Name="türekle">
+      <Parameter Name="türad" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="türsil">
+      <Parameter Name="türid" Mode="In" Type="Int32" />
+    </FunctionImport>
+  </EntityContainer>
+  <ComplexType Name="sp_helpdiagramdefinition_Result">
+    <Property Type="Int32" Name="version" Nullable="true" />
+    <Property Type="Binary" Name="definition" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="sp_helpdiagrams_Result">
+    <Property Type="String" Name="Database" Nullable="true" MaxLength="128" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="128" />
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="Owner" Nullable="true" MaxLength="128" />
+    <Property Type="Int32" Name="OwnerID" Nullable="false" />
+  </ComplexType>
+</Schema>

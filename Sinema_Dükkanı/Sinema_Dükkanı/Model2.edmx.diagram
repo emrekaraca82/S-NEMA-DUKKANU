@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="630cb2c210864e589d7fd0b46cbd7c50" Name="Diagram1">
+        <EntityTypeShape EntityType="sinema_dükkanıModel1.filmler" Width="1.5" PointX="3" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="sinema_dükkanıModel1.müsteriler" Width="1.5" PointX="6" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="sinema_dükkanıModel1.oyuncular" Width="1.5" PointX="5.25" PointY="3.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="sinema_dükkanıModel1.satıslar" Width="1.5" PointX="8.25" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="sinema_dükkanıModel1.sysdiagram" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="sinema_dükkanıModel1.türler" Width="1.5" PointX="5.25" PointY="9.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="sinema_dükkanıModel1.yöntemenler" Width="1.5" PointX="0.75" PointY="4.375" IsExpanded="true" />
+        <AssociationConnector Association="sinema_dükkanıModel1.FK_filmler_yöntemenler" ManuallyRouted="false" />
+        <AssociationConnector Association="sinema_dükkanıModel1.FK_satıslar_filmler" ManuallyRouted="false" />
+        <AssociationConnector Association="sinema_dükkanıModel1.FK_satıslar_filmler1" ManuallyRouted="false" />
+        <AssociationConnector Association="sinema_dükkanıModel1.FK_satıslar_müsteriler" ManuallyRouted="false" />
+        <AssociationConnector Association="sinema_dükkanıModel1.filmoyuncuları" ManuallyRouted="false" />
+        <AssociationConnector Association="sinema_dükkanıModel1.filmtürleri" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

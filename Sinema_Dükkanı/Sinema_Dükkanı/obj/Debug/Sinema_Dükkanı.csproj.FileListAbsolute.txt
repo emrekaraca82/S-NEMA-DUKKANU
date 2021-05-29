@@ -1,0 +1,70 @@
+C:\Users\DAMLA-REİS\Desktop\Sinema_Otomasyonu\Sinema_Dükkanı\Sinema_Dükkanı\bin\Debug\Sinema_Dükkanı.exe.config
+C:\Users\DAMLA-REİS\Desktop\Sinema_Otomasyonu\Sinema_Dükkanı\Sinema_Dükkanı\bin\Debug\Sinema_Dükkanı.exe
+C:\Users\DAMLA-REİS\Desktop\Sinema_Otomasyonu\Sinema_Dükkanı\Sinema_Dükkanı\bin\Debug\Sinema_Dükkanı.pdb
+C:\Users\DAMLA-REİS\Desktop\Sinema_Otomasyonu\Sinema_Dükkanı\Sinema_Dükkanı\obj\Debug\Sinema_Dükkanı.csprojResolveAssemblyReference.cache
+C:\Users\DAMLA-REİS\Desktop\Sinema_Otomasyonu\Sinema_Dükkanı\Sinema_Dükkanı\obj\Debug\Sinema_Dükkanı.Form1.resources
+C:\Users\DAMLA-REİS\Desktop\Sinema_Otomasyonu\Sinema_Dükkanı\Sinema_Dükkanı\obj\Debug\Sinema_Dükkanı.Properties.Resources.resources
+C:\Users\DAMLA-REİS\Desktop\Sinema_Otomasyonu\Sinema_Dükkanı\Sinema_Dükkanı\obj\Debug\Sinema_Dükkanı.csproj.GenerateResource.Cache
+C:\Users\DAMLA-REİS\Desktop\Sinema_Otomasyonu\Sinema_Dükkanı\Sinema_Dükkanı\obj\Debug\Sinema_Dükkanı.exe
+C:\Users\DAMLA-REİS\Desktop\Sinema_Otomasyonu\Sinema_Dükkanı\Sinema_Dükkanı\obj\Debug\Sinema_Dükkanı.pdb
+C:\Users\DAMLA-REİS\Desktop\Sinema_Otomasyonu\Sinema_Dükkanı\Sinema_Dükkanı\obj\Debug\Sinema_Dükkanı.Fmhakkımızdacs.resources
+C:\Users\DAMLA-REİS\Desktop\Sinema_Otomasyonu\Sinema_Dükkanı\Sinema_Dükkanı\obj\Debug\Sinema_Dükkanı.Fmmüsteri.resources
+C:\Users\DAMLA-REİS\Desktop\Sinema_Otomasyonu\Sinema_Dükkanı\Sinema_Dükkanı\obj\Debug\Sinema_Dükkanı.Fmrapor.resources
+C:\Users\DAMLA-REİS\Desktop\Sinema_Otomasyonu\Sinema_Dükkanı\Sinema_Dükkanı\obj\Debug\Sinema_Dükkanı.Fmsatıslar.resources
+C:\Users\DAMLA-REİS\Desktop\Sinema_Otomasyonu\Sinema_Dükkanı\Sinema_Dükkanı\obj\Debug\Sinema_Dükkanı.frmfilm.resources
+C:\Users\DAMLA-REİS\Desktop\Sinema_Otomasyonu\Sinema_Dükkanı\Sinema_Dükkanı\obj\Debug\Sinema_Dükkanı.Frmoyuncucs.resources
+C:\Users\DAMLA-REİS\Desktop\Sinema_Otomasyonu\Sinema_Dükkanı\Sinema_Dükkanı\obj\Debug\Sinema_Dükkanı.Frmtürler.resources
+C:\Users\DAMLA-REİS\Desktop\Sinema_Otomasyonu\Sinema_Dükkanı\Sinema_Dükkanı\obj\Debug\Sinema_Dükkanı.Frmyönetmen.resources
+C:\Users\DAMLA-REİS\Desktop\Sinema_Otomasyonu\Sinema_Dükkanı\Sinema_Dükkanı\bin\Debug\EntityFramework.dll
+C:\Users\DAMLA-REİS\Desktop\Sinema_Otomasyonu\Sinema_Dükkanı\Sinema_Dükkanı\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\DAMLA-REİS\Desktop\Sinema_Otomasyonu\Sinema_Dükkanı\Sinema_Dükkanı\bin\Debug\EntityFramework.xml
+C:\Users\DAMLA-REİS\Desktop\Sinema_Otomasyonu\Sinema_Dükkanı\Sinema_Dükkanı\bin\Debug\EntityFramework.SqlServer.xml
+D:\DERSLER\YAZILIM DERSLERİ\C# DERSLERİ\C# FORM DERSLERİ\Emre Çalışmalar\Otomasyonlar\Sinema_Otomasyonu\Sinema_Dükkanı\Sinema_Dükkanı\bin\Debug\Sinema_Dükkanı.exe.config
+D:\DERSLER\YAZILIM DERSLERİ\C# DERSLERİ\C# FORM DERSLERİ\Emre Çalışmalar\Otomasyonlar\Sinema_Otomasyonu\Sinema_Dükkanı\Sinema_Dükkanı\obj\Debug\Sinema_Dükkanı.exe
+D:\DERSLER\YAZILIM DERSLERİ\C# DERSLERİ\C# FORM DERSLERİ\Emre Çalışmalar\Otomasyonlar\Sinema_Otomasyonu\Sinema_Dükkanı\Sinema_Dükkanı\obj\Debug\Sinema_Dükkanı.pdb
+D:\DERSLER\YAZILIM DERSLERİ\C# DERSLERİ\C# FORM DERSLERİ\Emre Çalışmalar\Otomasyonlar\Sinema_Otomasyonu\Sinema_Dükkanı\Sinema_Dükkanı\bin\Debug\Sinema_Dükkanı.exe
+D:\DERSLER\YAZILIM DERSLERİ\C# DERSLERİ\C# FORM DERSLERİ\Emre Çalışmalar\Otomasyonlar\Sinema_Otomasyonu\Sinema_Dükkanı\Sinema_Dükkanı\bin\Debug\Sinema_Dükkanı.pdb
+D:\DERSLER\YAZILIM DERSLERİ\C# DERSLERİ\C# FORM DERSLERİ\Emre Çalışmalar\Otomasyonlar\Sinema_Otomasyonu\Sinema_Dükkanı\Sinema_Dükkanı\bin\Debug\EntityFramework.dll
+D:\DERSLER\YAZILIM DERSLERİ\C# DERSLERİ\C# FORM DERSLERİ\Emre Çalışmalar\Otomasyonlar\Sinema_Otomasyonu\Sinema_Dükkanı\Sinema_Dükkanı\bin\Debug\EntityFramework.SqlServer.dll
+D:\DERSLER\YAZILIM DERSLERİ\C# DERSLERİ\C# FORM DERSLERİ\Emre Çalışmalar\Otomasyonlar\Sinema_Otomasyonu\Sinema_Dükkanı\Sinema_Dükkanı\bin\Debug\EntityFramework.xml
+D:\DERSLER\YAZILIM DERSLERİ\C# DERSLERİ\C# FORM DERSLERİ\Emre Çalışmalar\Otomasyonlar\Sinema_Otomasyonu\Sinema_Dükkanı\Sinema_Dükkanı\bin\Debug\EntityFramework.SqlServer.xml
+D:\DERSLER\YAZILIM DERSLERİ\C# DERSLERİ\C# FORM DERSLERİ\Emre Çalışmalar\Otomasyonlar\Sinema_Otomasyonu\Sinema_Dükkanı\Sinema_Dükkanı\obj\Debug\Sinema_Dükkanı.csprojResolveAssemblyReference.cache
+D:\DERSLER\YAZILIM DERSLERİ\C# DERSLERİ\C# FORM DERSLERİ\Emre Çalışmalar\Otomasyonlar\Sinema_Otomasyonu\Sinema_Dükkanı\Sinema_Dükkanı\obj\Debug\Sinema_Dükkanı.Fmhakkımızdacs.resources
+D:\DERSLER\YAZILIM DERSLERİ\C# DERSLERİ\C# FORM DERSLERİ\Emre Çalışmalar\Otomasyonlar\Sinema_Otomasyonu\Sinema_Dükkanı\Sinema_Dükkanı\obj\Debug\Sinema_Dükkanı.Fmmüsteri.resources
+D:\DERSLER\YAZILIM DERSLERİ\C# DERSLERİ\C# FORM DERSLERİ\Emre Çalışmalar\Otomasyonlar\Sinema_Otomasyonu\Sinema_Dükkanı\Sinema_Dükkanı\obj\Debug\Sinema_Dükkanı.Fmrapor.resources
+D:\DERSLER\YAZILIM DERSLERİ\C# DERSLERİ\C# FORM DERSLERİ\Emre Çalışmalar\Otomasyonlar\Sinema_Otomasyonu\Sinema_Dükkanı\Sinema_Dükkanı\obj\Debug\Sinema_Dükkanı.Fmsatıslar.resources
+D:\DERSLER\YAZILIM DERSLERİ\C# DERSLERİ\C# FORM DERSLERİ\Emre Çalışmalar\Otomasyonlar\Sinema_Otomasyonu\Sinema_Dükkanı\Sinema_Dükkanı\obj\Debug\Sinema_Dükkanı.Form1.resources
+D:\DERSLER\YAZILIM DERSLERİ\C# DERSLERİ\C# FORM DERSLERİ\Emre Çalışmalar\Otomasyonlar\Sinema_Otomasyonu\Sinema_Dükkanı\Sinema_Dükkanı\obj\Debug\Sinema_Dükkanı.frmfilm.resources
+D:\DERSLER\YAZILIM DERSLERİ\C# DERSLERİ\C# FORM DERSLERİ\Emre Çalışmalar\Otomasyonlar\Sinema_Otomasyonu\Sinema_Dükkanı\Sinema_Dükkanı\obj\Debug\Sinema_Dükkanı.Frmoyuncucs.resources
+D:\DERSLER\YAZILIM DERSLERİ\C# DERSLERİ\C# FORM DERSLERİ\Emre Çalışmalar\Otomasyonlar\Sinema_Otomasyonu\Sinema_Dükkanı\Sinema_Dükkanı\obj\Debug\Sinema_Dükkanı.Frmtürler.resources
+D:\DERSLER\YAZILIM DERSLERİ\C# DERSLERİ\C# FORM DERSLERİ\Emre Çalışmalar\Otomasyonlar\Sinema_Otomasyonu\Sinema_Dükkanı\Sinema_Dükkanı\obj\Debug\Sinema_Dükkanı.Frmyönetmen.resources
+D:\DERSLER\YAZILIM DERSLERİ\C# DERSLERİ\C# FORM DERSLERİ\Emre Çalışmalar\Otomasyonlar\Sinema_Otomasyonu\Sinema_Dükkanı\Sinema_Dükkanı\obj\Debug\Sinema_Dükkanı.Properties.Resources.resources
+D:\DERSLER\YAZILIM DERSLERİ\C# DERSLERİ\C# FORM DERSLERİ\Emre Çalışmalar\Otomasyonlar\Sinema_Otomasyonu\Sinema_Dükkanı\Sinema_Dükkanı\obj\Debug\Sinema_Dükkanı.csproj.GenerateResource.Cache
+D:\DERSLER\YAZILIM DERSLERİ\C# DERSLERİ\C# FORM DERSLERİ\Emre Çalışmalar\Otomasyonlar\Sinema_Otomasyonu\Sinema_Dükkanı\Sinema_Dükkanı\obj\Debug\RdlCompile.cache
+D:\DERSLER\YAZILIM DERSLERİ\C# DERSLERİ\C# FORM DERSLERİ\Emre Çalışmalar\Otomasyonlar\Sinema_Otomasyonu\Sinema_Dükkanı\Sinema_Dükkanı\obj\Debug\RdlCompile.compiled
+D:\DERSLER\YAZILIM DERSLERİ\C# DERSLERİ\C# FORM DERSLERİ\Emre Çalışmalar\Otomasyonlar\SİNEMA DUKKANU\Sinema_Dükkanı\Sinema_Dükkanı\bin\Debug\Sinema_Dükkanı.exe.config
+D:\DERSLER\YAZILIM DERSLERİ\C# DERSLERİ\C# FORM DERSLERİ\Emre Çalışmalar\Otomasyonlar\SİNEMA DUKKANU\Sinema_Dükkanı\Sinema_Dükkanı\obj\Debug\Sinema_Dükkanı.exe
+D:\DERSLER\YAZILIM DERSLERİ\C# DERSLERİ\C# FORM DERSLERİ\Emre Çalışmalar\Otomasyonlar\SİNEMA DUKKANU\Sinema_Dükkanı\Sinema_Dükkanı\obj\Debug\Sinema_Dükkanı.pdb
+E:\DERSLER\YAZILIM DERSLERİ\C# DERSLERİ\C# FORM DERSLERİ\Emre Çalışmalar\Otomasyonlar\SİNEMA DUKKANU\Sinema_Dükkanı\Sinema_Dükkanı\bin\Debug\Sinema_Dükkanı.exe.config
+E:\DERSLER\YAZILIM DERSLERİ\C# DERSLERİ\C# FORM DERSLERİ\Emre Çalışmalar\Otomasyonlar\SİNEMA DUKKANU\Sinema_Dükkanı\Sinema_Dükkanı\obj\Debug\Sinema_Dükkanı.exe
+E:\DERSLER\YAZILIM DERSLERİ\C# DERSLERİ\C# FORM DERSLERİ\Emre Çalışmalar\Otomasyonlar\SİNEMA DUKKANU\Sinema_Dükkanı\Sinema_Dükkanı\obj\Debug\Sinema_Dükkanı.pdb
+E:\DERSLER\YAZILIM DERSLERİ\C# DERSLERİ\C# FORM DERSLERİ\Emre Çalışmalar\Otomasyonlar\SİNEMA DUKKANU\Sinema_Dükkanı\Sinema_Dükkanı\bin\Debug\Sinema_Dükkanı.exe
+E:\DERSLER\YAZILIM DERSLERİ\C# DERSLERİ\C# FORM DERSLERİ\Emre Çalışmalar\Otomasyonlar\SİNEMA DUKKANU\Sinema_Dükkanı\Sinema_Dükkanı\bin\Debug\Sinema_Dükkanı.pdb
+E:\DERSLER\YAZILIM DERSLERİ\C# DERSLERİ\C# FORM DERSLERİ\Emre Çalışmalar\Otomasyonlar\SİNEMA DUKKANU\Sinema_Dükkanı\Sinema_Dükkanı\bin\Debug\EntityFramework.dll
+E:\DERSLER\YAZILIM DERSLERİ\C# DERSLERİ\C# FORM DERSLERİ\Emre Çalışmalar\Otomasyonlar\SİNEMA DUKKANU\Sinema_Dükkanı\Sinema_Dükkanı\bin\Debug\EntityFramework.SqlServer.dll
+E:\DERSLER\YAZILIM DERSLERİ\C# DERSLERİ\C# FORM DERSLERİ\Emre Çalışmalar\Otomasyonlar\SİNEMA DUKKANU\Sinema_Dükkanı\Sinema_Dükkanı\bin\Debug\EntityFramework.xml
+E:\DERSLER\YAZILIM DERSLERİ\C# DERSLERİ\C# FORM DERSLERİ\Emre Çalışmalar\Otomasyonlar\SİNEMA DUKKANU\Sinema_Dükkanı\Sinema_Dükkanı\bin\Debug\EntityFramework.SqlServer.xml
+E:\DERSLER\YAZILIM DERSLERİ\C# DERSLERİ\C# FORM DERSLERİ\Emre Çalışmalar\Otomasyonlar\SİNEMA DUKKANU\Sinema_Dükkanı\Sinema_Dükkanı\obj\Debug\Sinema_Dükkanı.csprojResolveAssemblyReference.cache
+E:\DERSLER\YAZILIM DERSLERİ\C# DERSLERİ\C# FORM DERSLERİ\Emre Çalışmalar\Otomasyonlar\SİNEMA DUKKANU\Sinema_Dükkanı\Sinema_Dükkanı\obj\Debug\Sinema_Dükkanı.Fmhakkımızdacs.resources
+E:\DERSLER\YAZILIM DERSLERİ\C# DERSLERİ\C# FORM DERSLERİ\Emre Çalışmalar\Otomasyonlar\SİNEMA DUKKANU\Sinema_Dükkanı\Sinema_Dükkanı\obj\Debug\Sinema_Dükkanı.Fmmüsteri.resources
+E:\DERSLER\YAZILIM DERSLERİ\C# DERSLERİ\C# FORM DERSLERİ\Emre Çalışmalar\Otomasyonlar\SİNEMA DUKKANU\Sinema_Dükkanı\Sinema_Dükkanı\obj\Debug\Sinema_Dükkanı.Fmrapor.resources
+E:\DERSLER\YAZILIM DERSLERİ\C# DERSLERİ\C# FORM DERSLERİ\Emre Çalışmalar\Otomasyonlar\SİNEMA DUKKANU\Sinema_Dükkanı\Sinema_Dükkanı\obj\Debug\Sinema_Dükkanı.Fmsatıslar.resources
+E:\DERSLER\YAZILIM DERSLERİ\C# DERSLERİ\C# FORM DERSLERİ\Emre Çalışmalar\Otomasyonlar\SİNEMA DUKKANU\Sinema_Dükkanı\Sinema_Dükkanı\obj\Debug\Sinema_Dükkanı.Form1.resources
+E:\DERSLER\YAZILIM DERSLERİ\C# DERSLERİ\C# FORM DERSLERİ\Emre Çalışmalar\Otomasyonlar\SİNEMA DUKKANU\Sinema_Dükkanı\Sinema_Dükkanı\obj\Debug\Sinema_Dükkanı.frmfilm.resources
+E:\DERSLER\YAZILIM DERSLERİ\C# DERSLERİ\C# FORM DERSLERİ\Emre Çalışmalar\Otomasyonlar\SİNEMA DUKKANU\Sinema_Dükkanı\Sinema_Dükkanı\obj\Debug\Sinema_Dükkanı.Frmoyuncucs.resources
+E:\DERSLER\YAZILIM DERSLERİ\C# DERSLERİ\C# FORM DERSLERİ\Emre Çalışmalar\Otomasyonlar\SİNEMA DUKKANU\Sinema_Dükkanı\Sinema_Dükkanı\obj\Debug\Sinema_Dükkanı.Frmtürler.resources
+E:\DERSLER\YAZILIM DERSLERİ\C# DERSLERİ\C# FORM DERSLERİ\Emre Çalışmalar\Otomasyonlar\SİNEMA DUKKANU\Sinema_Dükkanı\Sinema_Dükkanı\obj\Debug\Sinema_Dükkanı.Frmyönetmen.resources
+E:\DERSLER\YAZILIM DERSLERİ\C# DERSLERİ\C# FORM DERSLERİ\Emre Çalışmalar\Otomasyonlar\SİNEMA DUKKANU\Sinema_Dükkanı\Sinema_Dükkanı\obj\Debug\Sinema_Dükkanı.Properties.Resources.resources
+E:\DERSLER\YAZILIM DERSLERİ\C# DERSLERİ\C# FORM DERSLERİ\Emre Çalışmalar\Otomasyonlar\SİNEMA DUKKANU\Sinema_Dükkanı\Sinema_Dükkanı\obj\Debug\Sinema_Dükkanı.csproj.GenerateResource.Cache
+E:\DERSLER\YAZILIM DERSLERİ\C# DERSLERİ\C# FORM DERSLERİ\Emre Çalışmalar\Otomasyonlar\SİNEMA DUKKANU\Sinema_Dükkanı\Sinema_Dükkanı\obj\Debug\RdlCompile.cache
+E:\DERSLER\YAZILIM DERSLERİ\C# DERSLERİ\C# FORM DERSLERİ\Emre Çalışmalar\Otomasyonlar\SİNEMA DUKKANU\Sinema_Dükkanı\Sinema_Dükkanı\obj\Debug\RdlCompile.compiled

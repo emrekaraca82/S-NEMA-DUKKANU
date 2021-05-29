@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="sinema_dükkanıModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="filmler">
+    <Key>
+      <PropertyRef Name="filmid" />
+    </Key>
+    <Property Name="filmid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="filmad" Type="nvarchar" MaxLength="50" />
+    <Property Name="konu" Type="nvarchar" MaxLength="100" />
+    <Property Name="yönetmenid" Type="int" />
+    <Property Name="sure" Type="int" />
+    <Property Name="vizyontarihi" Type="date" />
+    <Property Name="fiyat" Type="float" />
+    <Property Name="stok" Type="int" />
+  </EntityType>
+  <EntityType Name="filmoyuncuları">
+    <Key>
+      <PropertyRef Name="oyuncuid" />
+      <PropertyRef Name="filmid" />
+    </Key>
+    <Property Name="oyuncuid" Type="int" Nullable="false" />
+    <Property Name="filmid" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="filmtürleri">
+    <Key>
+      <PropertyRef Name="filmid" />
+      <PropertyRef Name="türid" />
+    </Key>
+    <Property Name="filmid" Type="int" Nullable="false" />
+    <Property Name="türid" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="müsteriler">
+    <Key>
+      <PropertyRef Name="müsid" />
+    </Key>
+    <Property Name="müsid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="adsoyad" Type="nvarchar" MaxLength="50" />
+    <Property Name="tcno" Type="nvarchar" MaxLength="11" />
+    <Property Name="adres" Type="nvarchar" MaxLength="50" />
+    <Property Name="telefon" Type="nvarchar" MaxLength="11" />
+    <Property Name="kayıttarihi" Type="datetime" />
+  </EntityType>
+  <EntityType Name="oyuncular">
+    <Key>
+      <PropertyRef Name="oyuncuid" />
+    </Key>
+    <Property Name="oyuncuid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="adısoyadı" Type="nvarchar" MaxLength="50" />
+    <Property Name="dogumtarihi" Type="date" />
+    <Property Name="memleket" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="satıslar">
+    <Key>
+      <PropertyRef Name="satısid" />
+    </Key>
+    <Property Name="satısid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="müsid" Type="int" />
+    <Property Name="filmid" Type="int" />
+    <Property Name="satıstarih" Type="date" />
+    <Property Name="adet" Type="int" />
+    <Property Name="fiyat" Type="float" />
+    <Property Name="tutar" Type="float" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="türler">
+    <Key>
+      <PropertyRef Name="türid" />
+    </Key>
+    <Property Name="türid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="türad" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="yöntemenler">
+    <Key>
+      <PropertyRef Name="yönetmenid" />
+    </Key>
+    <Property Name="yönetmenid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="adsoyad" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <Association Name="FK_filmler_yöntemenler">
+    <End Role="yöntemenler" Type="Self.yöntemenler" Multiplicity="0..1" />
+    <End Role="filmler" Type="Self.filmler" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="yöntemenler">
+        <PropertyRef Name="yönetmenid" />
+      </Principal>
+      <Dependent Role="filmler">
+        <PropertyRef Name="yönetmenid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_filmoyuncuları_filmler">
+    <End Role="filmler" Type="Self.filmler" Multiplicity="1" />
+    <End Role="filmoyuncuları" Type="Self.filmoyuncuları" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="filmler">
+        <PropertyRef Name="filmid" />
+      </Principal>
+      <Dependent Role="filmoyuncuları">
+        <PropertyRef Name="filmid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_filmoyuncuları_oyuncular">
+    <End Role="oyuncular" Type="Self.oyuncular" Multiplicity="1" />
+    <End Role="filmoyuncuları" Type="Self.filmoyuncuları" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="oyuncular">
+        <PropertyRef Name="oyuncuid" />
+      </Principal>
+      <Dependent Role="filmoyuncuları">
+        <PropertyRef Name="oyuncuid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_filmtürleri_filmler">
+    <End Role="filmler" Type="Self.filmler" Multiplicity="1" />
+    <End Role="filmtürleri" Type="Self.filmtürleri" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="filmler">
+        <PropertyRef Name="filmid" />
+      </Principal>
+      <Dependent Role="filmtürleri">
+        <PropertyRef Name="filmid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_filmtürleri_türler">
+    <End Role="türler" Type="Self.türler" Multiplicity="1" />
+    <End Role="filmtürleri" Type="Self.filmtürleri" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="türler">
+        <PropertyRef Name="türid" />
+      </Principal>
+      <Dependent Role="filmtürleri">
+        <PropertyRef Name="türid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_satıslar_filmler">
+    <End Role="filmler" Type="Self.filmler" Multiplicity="0..1" />
+    <End Role="satıslar" Type="Self.satıslar" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="filmler">
+        <PropertyRef Name="filmid" />
+      </Principal>
+      <Dependent Role="satıslar">
+        <PropertyRef Name="filmid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_satıslar_filmler1">
+    <End Role="filmler" Type="Self.filmler" Multiplicity="0..1" />
+    <End Role="satıslar" Type="Self.satıslar" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="filmler">
+        <PropertyRef Name="filmid" />
+      </Principal>
+      <Dependent Role="satıslar">
+        <PropertyRef Name="filmid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_satıslar_müsteriler">
+    <End Role="müsteriler" Type="Self.müsteriler" Multiplicity="0..1" />
+    <End Role="satıslar" Type="Self.satıslar" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="müsteriler">
+        <PropertyRef Name="müsid" />
+      </Principal>
+      <Dependent Role="satıslar">
+        <PropertyRef Name="müsid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="fn_diagramobjects" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="int" />
+  <Function Name="sp_alterdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_creatediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_dropdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagramdefinition" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_renamediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="new_diagramname" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_upgraddiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="türekle" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="türad" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="türsil" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="türid" Type="int" Mode="In" />
+  </Function>
+  <EntityContainer Name="sinema_dükkanıModelStoreContainer">
+    <EntitySet Name="filmler" EntityType="Self.filmler" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="filmoyuncuları" EntityType="Self.filmoyuncuları" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="filmtürleri" EntityType="Self.filmtürleri" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="müsteriler" EntityType="Self.müsteriler" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="oyuncular" EntityType="Self.oyuncular" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="satıslar" EntityType="Self.satıslar" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="türler" EntityType="Self.türler" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="yöntemenler" EntityType="Self.yöntemenler" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_filmler_yöntemenler" Association="Self.FK_filmler_yöntemenler">
+      <End Role="yöntemenler" EntitySet="yöntemenler" />
+      <End Role="filmler" EntitySet="filmler" />
+    </AssociationSet>
+    <AssociationSet Name="FK_filmoyuncuları_filmler" Association="Self.FK_filmoyuncuları_filmler">
+      <End Role="filmler" EntitySet="filmler" />
+      <End Role="filmoyuncuları" EntitySet="filmoyuncuları" />
+    </AssociationSet>
+    <AssociationSet Name="FK_filmoyuncuları_oyuncular" Association="Self.FK_filmoyuncuları_oyuncular">
+      <End Role="oyuncular" EntitySet="oyuncular" />
+      <End Role="filmoyuncuları" EntitySet="filmoyuncuları" />
+    </AssociationSet>
+    <AssociationSet Name="FK_filmtürleri_filmler" Association="Self.FK_filmtürleri_filmler">
+      <End Role="filmler" EntitySet="filmler" />
+      <End Role="filmtürleri" EntitySet="filmtürleri" />
+    </AssociationSet>
+    <AssociationSet Name="FK_filmtürleri_türler" Association="Self.FK_filmtürleri_türler">
+      <End Role="türler" EntitySet="türler" />
+      <End Role="filmtürleri" EntitySet="filmtürleri" />
+    </AssociationSet>
+    <AssociationSet Name="FK_satıslar_filmler" Association="Self.FK_satıslar_filmler">
+      <End Role="filmler" EntitySet="filmler" />
+      <End Role="satıslar" EntitySet="satıslar" />
+    </AssociationSet>
+    <AssociationSet Name="FK_satıslar_filmler1" Association="Self.FK_satıslar_filmler1">
+      <End Role="filmler" EntitySet="filmler" />
+      <End Role="satıslar" EntitySet="satıslar" />
+    </AssociationSet>
+    <AssociationSet Name="FK_satıslar_müsteriler" Association="Self.FK_satıslar_müsteriler">
+      <End Role="müsteriler" EntitySet="müsteriler" />
+      <End Role="satıslar" EntitySet="satıslar" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
